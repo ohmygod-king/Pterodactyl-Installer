@@ -55,7 +55,7 @@ Script instalasi otomatis untuk **Pterodactyl Panel** dan **Wings (Daemon Node)*
 
 ---
 
-## Cara bash
+## Clone Repositori
 
 ```bash
 git clone https://github.com/ohmygod-king/Pterodactyl-Installer
@@ -63,12 +63,11 @@ cd Pterodactyl-Installer
 bash svogtero.sh
 ```
 
-### Tanpa Clone
+## Tanpa Clone
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/ohmygod-king/Pterodactyl-Installer/main/svogtero.sh)
 ```
 
-Script akan menampilkan banner, melakukan pengecekan root dan OS, lalu menampilkan menu pilihan mode instalasi.
 
 ---
 
@@ -136,9 +135,7 @@ Password database (`DB_PASSWORD`) dibuat secara otomatis dan acak untuk setiap i
 7. Aktifkan dan jalankan Wings:
 
 ```bash
-systemctl enable --now wings
-systemctl status wings
-journalctl -u wings -f
+systemctl start wings
 ```
 
 ---
