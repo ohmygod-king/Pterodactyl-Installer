@@ -55,10 +55,17 @@ Script instalasi otomatis untuk **Pterodactyl Panel** dan **Wings (Daemon Node)*
 
 ---
 
-## Cara Penggunaan
+## Cara bash
 
 ```bash
-sudo bash svogtero.sh
+git clone https://github.com/ohmygod-king/Pterodactyl-Installer
+cd Pterodactyl-Installer
+bash svogtero.sh
+```
+
+### Tanpa Clone
+```bash
+bash <(curl -s https://raw.githubusercontent.com/ohmygod-king/Pterodactyl-Installer/main/svogtero.sh)
 ```
 
 Script akan menampilkan banner, melakukan pengecekan root dan OS, lalu menampilkan menu pilihan mode instalasi.
